@@ -22,7 +22,7 @@ class DetailsVC: UIViewController {
     }
     
     func setUI() {
-        self.title = "Details"
+        self.title = ScreenTitles().detailsScreen
         self.TaskTitleTextfield.text = selectedTask?.title
         self.completedSwitch.isOn = (selectedTask?.completed == true)
     }
@@ -33,7 +33,7 @@ class DetailsVC: UIViewController {
             let task = Task(id: selectedTask!.id, title: TaskTitleTextfield.text!, completed: completedSwitch.isOn)
             if (manager.updateTask(task: task)) {
                 navigationController?.popViewController(animated: true)
-                displayAlert( alertMessage: "Task Updated")
+                displayAlert( alertMessage: AlertMessages().updateMsg)
             } else {
                 displayErrorAlert()
             }
@@ -45,7 +45,7 @@ class DetailsVC: UIViewController {
         
         if(manager.deleteTask(id: selectedTask!.id)) {
             navigationController?.popViewController(animated: true)
-            displayAlert(alertMessage: "Task deleted")
+            displayAlert(alertMessage: AlertMessages().deleteMsg)
         } else {
             
         }
@@ -63,7 +63,7 @@ class DetailsVC: UIViewController {
        }
     
     func displayErrorAlert() {
-        displayAlert(alertMessage: "An error ocurred")
+        displayAlert(alertMessage: AlertMessages().errorMsg)
        }
 
 

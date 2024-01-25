@@ -16,7 +16,7 @@ extension TaskListVC : UITableViewDelegate, UITableViewDataSource {
 
      
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskListCell", for: indexPath) as! TaskListCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers().cellId, for: indexPath) as! TaskListCell
         
         let task = self.tasks![indexPath.row]
         cell.TaskTitleLabel.text = task.title

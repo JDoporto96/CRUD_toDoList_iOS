@@ -20,10 +20,10 @@ class TaskListVC: UIViewController {
         
         
         
-        title = "Task List"
+        title = ScreenTitles().mainScreen
         
-        let nib = UINib(nibName: "TaskListCell", bundle: nil)
-        TaskListTableView.register(nib, forCellReuseIdentifier: "TaskListCell")
+        let nib = UINib(nibName: CellIdentifiers().cellId, bundle: nil)
+        TaskListTableView.register(nib, forCellReuseIdentifier: CellIdentifiers().cellId)
         TaskListTableView.delegate = self
         TaskListTableView.dataSource = self
         
@@ -46,7 +46,7 @@ class TaskListVC: UIViewController {
     }
 
     @IBAction func AddBtnTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "AddTaskSegue", sender: self)
+        performSegue(withIdentifier: SegueIdentifiers.navigationToAdd.rawValue, sender: self)
     }
    
 

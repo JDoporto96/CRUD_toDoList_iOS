@@ -19,7 +19,7 @@ class AddTaskVC: UIViewController {
     }
     
     func setUI() {
-        self.title = "Add new task"
+        self.title = ScreenTitles().detailsScreen
     }
     
 

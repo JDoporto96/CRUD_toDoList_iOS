@@ -26,6 +26,9 @@
 		688FF6DF2B61ED2500DFFC2F /* CDTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 688FF6DD2B61ED2500DFFC2F /* CDTask.xcdatamodeld */; };
 		688FF6E12B61F00400DFFC2F /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688FF6E02B61F00400DFFC2F /* DetailsVC.swift */; };
 		68903C6D2B62D0B600BE7EBB /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68903C6C2B62D0B600BE7EBB /* SegueIdentifiers.swift */; };
+		68903C6F2B631C9E00BE7EBB /* ScreenTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68903C6E2B631C9E00BE7EBB /* ScreenTitles.swift */; };
+		68903C712B631D6A00BE7EBB /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68903C702B631D6A00BE7EBB /* AlertMessages.swift */; };
+		68903C732B631E3300BE7EBB /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68903C722B631E3300BE7EBB /* CellIdentifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		688FF6DE2B61ED2500DFFC2F /* CDTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDTask.xcdatamodel; sourceTree = "<group>"; };
 		688FF6E02B61F00400DFFC2F /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		68903C6C2B62D0B600BE7EBB /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
+		68903C6E2B631C9E00BE7EBB /* ScreenTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitles.swift; sourceTree = "<group>"; };
+		68903C702B631D6A00BE7EBB /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		68903C722B631E3300BE7EBB /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				68903C6C2B62D0B600BE7EBB /* SegueIdentifiers.swift */,
+				68903C6E2B631C9E00BE7EBB /* ScreenTitles.swift */,
+				68903C702B631D6A00BE7EBB /* AlertMessages.swift */,
+				68903C722B631E3300BE7EBB /* CellIdentifiers.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -244,7 +253,9 @@
 			files = (
 				68903C6D2B62D0B600BE7EBB /* SegueIdentifiers.swift in Sources */,
 				688FF6DA2B61E9C300DFFC2F /* CDTask+CoreDataProperties.swift in Sources */,
+				68903C6F2B631C9E00BE7EBB /* ScreenTitles.swift in Sources */,
 				688FF6B22B61B98000DFFC2F /* TaskDataRepository.swift in Sources */,
+				68903C712B631D6A00BE7EBB /* AlertMessages.swift in Sources */,
 				688FF6D42B61DC6400DFFC2F /* TaskListVCExtension.swift in Sources */,
 				688FF6932B619DBE00DFFC2F /* TaskListVC.swift in Sources */,
 				688FF6C92B61BEC500DFFC2F /* TaskManager.swift in Sources */,
@@ -252,6 +263,7 @@
 				688FF6CE2B61CE4300DFFC2F /* TaskListCell.swift in Sources */,
 				688FF6C72B61BCFD00DFFC2F /* TaskModel.swift in Sources */,
 				688FF6DF2B61ED2500DFFC2F /* CDTask.xcdatamodeld in Sources */,
+				68903C732B631E3300BE7EBB /* CellIdentifiers.swift in Sources */,
 				688FF6912B619DBE00DFFC2F /* SceneDelegate.swift in Sources */,
 				688FF6AE2B61B15600DFFC2F /* PersistentStorage.swift in Sources */,
 				688FF6E12B61F00400DFFC2F /* DetailsVC.swift in Sources */,
