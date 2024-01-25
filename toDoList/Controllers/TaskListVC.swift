@@ -18,18 +18,20 @@ class TaskListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         title = "Task List"
         
         let nib = UINib(nibName: "TaskListCell", bundle: nil)
         TaskListTableView.register(nib, forCellReuseIdentifier: "TaskListCell")
         TaskListTableView.delegate = self
         TaskListTableView.dataSource = self
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tasks = manager.fetchAllTasks()
-        if(tasks != nil && tasks?.count != 0) {
+        if(tasks != nil) {
             self.TaskListTableView.reloadData()
         }
     }

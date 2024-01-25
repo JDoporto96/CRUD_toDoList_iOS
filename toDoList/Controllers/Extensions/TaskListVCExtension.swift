@@ -22,12 +22,14 @@ extension TaskListVC : UITableViewDelegate, UITableViewDataSource {
         cell.TaskTitleLabel.text = task.title
         cell.TaskStatusLabel.text = task.completed ? "Completed" : "Pending"
         cell.TaskStatusLabel.textColor = task.completed ? UIColor(.green) : UIColor(.red)
-
+        
          return cell
      }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: SegueIdentifiers.navigationToDetails.rawValue, sender: self)
+        
+        performSegue(withIdentifier: SegueIdentifiers.navigationToDetails.rawValue, sender: indexPath)
+//        tableView.deselectRow(at: indexPath, animated: false)
     }
     
     
